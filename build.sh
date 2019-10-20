@@ -1,3 +1,3 @@
 #!/bin/bash
 cd lib
-./getlibs.sh
+../build-scripts/getlibs.sh
