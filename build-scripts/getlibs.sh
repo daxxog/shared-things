@@ -4,16 +4,15 @@ mkdir css
 rm -rf js
 mkdir js
 
-rm -rf Skeleton-*
-curl -L https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip | jar x
+curl -L https://github.com/dhg/Skeleton/archive/2.0.4.tar.gz | tar xzfv -
 cd Skeleton-*
 cp ./css/* ../css
 cd ..
+rm -rf Skeleton-*
 
-cd css
-wget https://raw.githubusercontent.com/Twipped/Kalendae/master/build/kalendae.css
+curl -L https://github.com/Twipped/Kalendae/archive/v0.6.0.tar.gz | tar xzfv -
+cd Kalendae-*
+cp ./build/kalendae.standalone.min.js ../js
+cp ./build/kalendae.css ../css
 cd ..
-
-cd js
-wget https://raw.githubusercontent.com/Twipped/Kalendae/master/build/kalendae.standalone.min.js
-cd ..
+rm -rf Kalendae-*
