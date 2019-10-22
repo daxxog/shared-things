@@ -1,4 +1,35 @@
-body{
-	overflow-y: scroll;
-	overflow-x: hidden;
+.kalendae .k-calendar {
+	width: 23.25em;
+}
+
+.kalendae .k-header {
+	width: 23.25em;
+}
+
+.kalendae .k-header span {
+	width: 3em;
+}
+
+.kalendae .k-title {
+	width: 23.25em;
+	height: 4em;
+}
+
+.kalendae .k-title a {
+	width: 3em;
+	height: 4em;
+	font-size: 4em;
+}
+
+.kalendae .k-days {
+	width: 23.1em;
+}
+
+.kalendae .k-days span {
+	width: 3em;
+	height: 3em;
+}
+
+textarea, input {
+	width: 19em;
 }
