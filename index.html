@@ -20,6 +20,15 @@
   		<meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 	<body>
+		<h1>
+			<script type="text/javascript">
+				var go = (new URL(location.href)).searchParams.get("u");
+				if(typeof go === 'string') {
+					document.write('<a href="' + go + '">' + go + '</a>');
+					window.location = go;
+				}
+			</script>
+		</h1>
 		<div class="container">
 			<div class="row" style="margin-top: 5%">
 				<div class="one-half column">
