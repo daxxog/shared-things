@@ -1,35 +1,52 @@
+/*
+23.25 * x = 90
+x = 3.8709677419
+*/
+
 .kalendae .k-calendar {
-	width: 23.25em;
+	width: 90vw;
 }
 
 .kalendae .k-header {
-	width: 23.25em;
+	width: 90vw;
 }
 
 .kalendae .k-header span {
-	width: 3em;
+	width: 11.61vw;
 }
 
 .kalendae .k-title {
-	width: 23.25em;
-	height: 4em;
+	width: 90vw;
+	height: 5vh;
 }
 
 .kalendae .k-title a {
-	width: 3em;
+	width: 11.61vw;
 	height: 4em;
 	font-size: 4em;
 }
 
 .kalendae .k-days {
-	width: 23.1em;
+	width: 89.42vw;
 }
 
 .kalendae .k-days span {
-	width: 3em;
-	height: 3em;
+	width: 11.61vw;
+	height: 10vh;
+	font-size: 5vh;
+}
+
+.kalendae .k-today {
+	font-family: Serif;
+	text-decoration: overline;
+	font-weight: bold;
 }
 
 textarea, input {
-	width: 19em;
+	width: 73.55vw;
+}
+
+div.container {
+	margin-left: 3vw;
+	margin-right: 3vw;
 }
