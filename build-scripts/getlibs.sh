@@ -6,7 +6,7 @@ mkdir js
 
 curl -L https://github.com/dhg/Skeleton/archive/2.0.4.tar.gz | tar xzfv -
 cd Skeleton-*
-cp ./css/* ../css
+cp ./css/normalize.css ../css
 cd ..
 rm -rf Skeleton-*
 
