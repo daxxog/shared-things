@@ -13,6 +13,7 @@
   		<link rel="stylesheet" href="css/shared-things.css" type="text/css" charset="utf-8">
 
   		<script src="lib/js/kalendae.standalone.min.js" type="text/javascript" charset="utf-8"></script>
+  		<script src="js/shared-things.js" type="text/javascript" charset="utf-8"></script>
 
   		<link rel="icon" type="image/png" href="images/appicon-ios.png">
   		<link rel="apple-touch-icon" href="images/appicon-ios.png">
@@ -22,6 +23,7 @@
 	<body>
 		<h1>
 			<script type="text/javascript">
+				//url redirector
 				var go = (new URL(location.href)).searchParams.get("u");
 				if(typeof go === 'string') {
 					document.write('<a href="' + go + '">' + go + '</a>');
@@ -38,21 +40,20 @@
 			</div>
 			<div class="row">
 				<div class="one-half column">
-					<div class="auto-kal" data-kal="useYearNav: false"></div>
+					<div class="auto-kal" data-kal="useYearNav: false" onclick="javascript:updateUrl()" />
 				</div>
 			</div>
 			<div class="row">
 				<div class="one-half column">
-					<p><input type="text" placeholder="New To-Do"></p>
+					<p><input id="things-title" type="text" placeholder="New To-Do" onchange="javascript:updateUrl()" /></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="one-half column">
-					<p><textarea placeholder="Notes" rows="5"></textarea></p>
+					<p><textarea id="things-notes" placeholder="Notes" rows="5" onchange="javascript:updateUrl()"></textarea></p>
 				</div>
 				<div class="one-half column">
-					<p><input type="text" placeholder="things:link"></p>
-					<p><a href="https://daxxog.github.io/shared-things/link.html">test link</a></p>
+					<p><input type="text" id="things-link" placeholder="things:link" onclick="this.select();"></p>
 				</div>
 			</div>
 		</div>
